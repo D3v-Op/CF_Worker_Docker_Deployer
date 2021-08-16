@@ -8,7 +8,7 @@
 
 # str or $(curl https://domain tld/path/to/file )
 
-CF_API_TOKEN='vhWg-3wG8uoNQtPpDHXCRM3Fd1VPvu3ObRD-oRbY'
+CF_API_TOKEN=''
 
 # https://domain tld/path/to/file
 
@@ -25,7 +25,7 @@ TOML_LINK=''
 # https://domain tld/path/to/file
 # build(for testing perposes) or publish
 
-TRIGGER_CMD='build'
+TRIGGER_CMD='publish'
 
 
 SHELL_MSG_FIRST='   ⟩⟩⟩ CF_Wrangler Deployer Exicution Started … '
@@ -91,9 +91,7 @@ func_2() {
       cd && \
   rm -rf ~/wrangler
   
-}
-
-#&> /dev/null
+} &> /dev/null
 
 func_3() {
   
@@ -136,10 +134,10 @@ refresh && \
   sleep 3 && \
 ECHO_2 $SHELL_MSG1 && \
   func_1 && \
-    refresh && \
+    refresh > /dev/null && \
     sleep 3 && \
 ECHO_2 $SHELL_MSG2 && \
-  func_2 && \
+  func_2 > /dev/null && \
     refresh && \
     sleep 3 && \
   func_3 && \
