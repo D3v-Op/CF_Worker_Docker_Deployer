@@ -86,7 +86,7 @@ func_2() {
   cd && \
   git clone \
     https://github.com/cloudflare/wrangler/ && \
-  cd /home/app/wrangler/npm/ && \
+  cd ~/wrangler/npm/ && \
     npm install && \
       cd && \
   rm -rf ~/wrangler
@@ -97,9 +97,9 @@ func_2() {
 
 func_3() {
   
-  mkdir /root/.wrangler/config/
-  echo "api_token = '${CF_API_TOKEN}'" > /root/.wrangler/config/default.toml && \
-  /root/.wrangler/bin/wrangler whoami
+  mkdir ~/.wrangler/config/
+  echo "api_token = '${CF_API_TOKEN}'" > ~/.wrangler/config/default.toml && \
+  ~/.wrangler/bin/wrangler whoami
   
 }
 
@@ -122,7 +122,7 @@ func_4() {
 func_5() {
   
   cd && \
-    /root/.wrangler/bin/wrangler ${TRIGGER_CMD}
+    ./.wrangler/bin/wrangler ${TRIGGER_CMD}
   
 }
 
