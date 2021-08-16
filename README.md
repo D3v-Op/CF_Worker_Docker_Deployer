@@ -5,6 +5,7 @@ Well Hello There Fellas
 Im glad u came here for wrangler cli installation solution
 But With Havy Heart I let u know that
 this repo doesn't actually installs the npm wrangler,
+Bcz npm installer sucks af ,
 Instead it uses the raw binary frm official repo
 
 This repo can be modified for bot usage & 
