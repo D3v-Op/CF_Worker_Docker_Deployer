@@ -6,24 +6,24 @@
 
 
 
-///str or $(curl https://domain tld/path/to/file )
+# str or $(curl https://domain tld/path/to/file )
 
 CF_API_TOKEN='vhWg-3wG8uoNQtPpDHXCRM3Fd1VPvu3ObRD-oRbY'
 
-///https://domain tld/path/to/file
+# https://domain tld/path/to/file
 
 INDEX_JS_LINK=''
 
-///https://domain tld/path/to/file
+# https://domain tld/path/to/file
 
 PACKAGE_JS_LINK=''
 
-///https://domain tld/path/to/file
+# https://domain tld/path/to/file
 
 TOML_LINK=''
 
-///https://domain tld/path/to/file
-/// build(for testing perposes) or publish
+# https://domain tld/path/to/file
+# build(for testing perposes) or publish
 
 TRIGGER_CMD='build'
 
@@ -91,7 +91,9 @@ func_2() {
       cd && \
   rm -rf ~/wrangler
   
-} &> /dev/null
+}
+
+#&> /dev/null
 
 func_3() {
   
@@ -134,11 +136,11 @@ refresh && \
   sleep 3 && \
 ECHO_2 $SHELL_MSG1 && \
   func_1 && \
-    refresh > /dev/null && \
+    refresh && \
     sleep 3 && \
 ECHO_2 $SHELL_MSG2 && \
   func_2 && \
-    refresh > /dev/null && \
+    refresh && \
     sleep 3 && \
   func_3 && \
   func_5 && \
