@@ -2,7 +2,7 @@
 
 Well Hello There Fellas
 
-Im glad u came here for
+Im glad u came here ,
 If u looking for wrangler cli installation than
 With Havy Heart I let u know that
 this repo doesn't actually installs the npm wrangler frm npm ,
