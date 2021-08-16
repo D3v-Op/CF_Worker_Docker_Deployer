@@ -19,11 +19,11 @@ WORKDIR /home/app/
 
 ENV \
   DEBIAN_FRONTEND='noninteractive' \
-  HOME = /home/app/ \
-  LANG = 'en_US.UTF-8' \
-  LANGUAGE = "en_US.UTF-8" \
-  TERM = "xterm" \
-  TZ = 'Asia/Kolkata'
+  HOME=/home/app/ \
+  LANG='en_US.UTF-8' \
+  LANGUAGE='en_US.UTF-8' \
+  TERM='xterm' \
+  TZ='Asia/Kolkata'
 ###
 
 WORKDIR /home/app/
