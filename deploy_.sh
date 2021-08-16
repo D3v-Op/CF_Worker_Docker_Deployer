@@ -7,6 +7,7 @@
 
 
 # str or $(curl https://domain tld/path/to/file )
+# get *** " API_TOKEN " *** FROM https://dash.cloudflare.com/profile/api-tokens
 
 CF_API_TOKEN=''
 
