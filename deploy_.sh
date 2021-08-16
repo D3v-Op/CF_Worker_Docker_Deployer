@@ -102,9 +102,6 @@ func_3() {
 }
 
 
-###vhWg-3wG8uoNQtPpDHXCRM3Fd1VPvu3ObRD-oRbY
-
-
 func_4() {
   
   cd && \
