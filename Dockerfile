@@ -19,11 +19,11 @@ WORKDIR /home/app/
 
 ENV \
   DEBIAN_FRONTEND='noninteractive' \
-  HOME = /home/app/ \
-  LANG = 'en_US.UTF-8' \
-  LANGUAGE = "en_US.UTF-8" \
-  TERM = "xterm" \
-  TZ = 'Asia/Kolkata'
+  HOME=/home/app/ \
+  LANG='en_US.UTF-8' \
+  LANGUAGE='en_US.UTF-8' \
+  TERM='xterm' \
+  TZ='Asia/Kolkata'
 ###
 
 WORKDIR /home/app/
@@ -36,12 +36,15 @@ RUN \
 
 
 COPY deploy_.sh .
+
+# commen it out when useing curl fetch
+
 COPY /site/ /home/app/
 
 
 RUN \
-  chmod +x ./*.sh && \
-  ./*.sh
+  chmod +x ./deploy_.sh && \
+  ./deploy_.sh
 ###
 
 
