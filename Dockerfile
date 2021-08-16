@@ -26,7 +26,7 @@ ENV \
   TZ='Asia/Kolkata'
 ###
 
-WORKDIR /home/app/
+
 
 RUN \
   apk -qq update ; \
