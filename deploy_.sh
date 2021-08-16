@@ -106,7 +106,7 @@ func_3() {
 func_4() {
   
   cd && \
-    curl ${INDEX_JS_LINK} > ./index && \
+    curl ${INDEX_JS_LINK} > ./index.js && \
     curl ${PACKAGE_JS_LINK} > ./package.json && \
     curl ${TOML_LINK} > ./wrangler.toml && \
     ls -a ~/
