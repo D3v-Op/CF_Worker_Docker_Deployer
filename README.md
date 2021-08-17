@@ -23,6 +23,5 @@ Hope u hav grate time
 
 See ya later with another silly project like this
 
-Made With ❤️ By [](
-https://t.me/KAKAROT379)
+Made With ❤️ By [@KAKAROT379](https://t.me/KAKAROT379)
 
