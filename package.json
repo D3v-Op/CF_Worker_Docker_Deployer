@@ -2,7 +2,7 @@
   "name": "@googledrive/index",
   "version": "2.0.21",
   "description": "A Google Drive Index to List, Watch and Download Files using a Beautiful UI.",
-  "main": "README.md",
+  "main": "index.js",
   "keywords": [
     "google-drive-index, bhadoo, bhadoo-drive-index"
   ],
