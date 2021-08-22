@@ -9,7 +9,7 @@
 # str or $(curl https://domain tld/path/to/file )
 # get *** " API_TOKEN " *** FROM https://dash.cloudflare.com/profile/api-tokens
 
-CF_API_TOKEN=''
+CF_API_TOKEN='abc123_use-u-r-own'
 
 # https://domain tld/path/to/file
 
@@ -26,7 +26,7 @@ TOML_LINK=''
 # https://domain tld/path/to/file
 # build(for testing perposes) or publish
 
-TRIGGER_CMD='publish'
+TRIGGER_CMD='build'
 
 
 SHELL_MSG_FIRST='   ⟩⟩⟩ CF_Wrangler Deployer Exicution Started … '
@@ -98,7 +98,10 @@ func_3() {
   
   mkdir ~/.wrangler/config/
   echo "api_token = '${CF_API_TOKEN}'" > ~/.wrangler/config/default.toml && \
-  ~/.wrangler/bin/wrangler whoami
+  mv ~/.wrangler/bin/wrangler /use/bin/ && \
+  chmod +x /usr/bin/wrangler && \
+  chowb root:root /usr/bin/wrangler && \
+  wrangler whoami
   
 }
 
@@ -118,7 +121,7 @@ func_4() {
 func_5() {
   
   cd && \
-    ./.wrangler/bin/wrangler ${TRIGGER_CMD}
+    wrangler ${TRIGGER_CMD}
   
 }
 
