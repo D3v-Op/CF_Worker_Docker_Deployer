@@ -26,7 +26,7 @@ TOML_LINK=''
 # https://domain tld/path/to/file
 # build(for testing perposes) or publish
 
-TRIGGER_CMD='build'
+TRIGGER_CMD='publish'
 
 
 SHELL_MSG_FIRST='   ⟩⟩⟩ CF_Wrangler Deployer Exicution Started … '
@@ -132,7 +132,7 @@ ECHO_1 $SHELL_MSG_FIRST && \
 ECHO_2 $SHELL_MSG_WARN && \
   sleep 9 && \
 refresh && \
-  sleep 3 && \
+  sleep 1 && \
 ECHO_2 $SHELL_MSG1 && \
   func_1 && \
     refresh > /dev/null && \
@@ -140,7 +140,7 @@ ECHO_2 $SHELL_MSG1 && \
 ECHO_2 $SHELL_MSG2 && \
   func_2 > /dev/null && \
     refresh && \
-    sleep 3 && \
+    sleep 1 && \
   func_3 && \
   func_5 && \
 ECHO_1 $SHELL_MSG_LAST
