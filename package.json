@@ -1,19 +1,6 @@
 {
-  "name": "@googledrive/index",
-  "version": "2.0.21",
-  "description": "A Google Drive Index to List, Watch and Download Files using a Beautiful UI.",
-  "main": "index.js",
-  "keywords": [
-    "google-drive-index, bhadoo, bhadoo-drive-index"
-  ],
-  "author": "Parveen Bhadoo",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index.git"
-  },
-  "bugs": {
-    "url": "https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index/issues"
-  },
-  "homepage": "https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index/-/blob/master/README.md"
+  "name": "smthing",
+  "version": "1.0.0-alpha",
+  "description": "deploy cf workers useing wrangler cli , this is just a test file",
+  "main": "index.js"
 }
